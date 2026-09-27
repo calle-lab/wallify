@@ -1,0 +1,29 @@
+:root{--bg:#F7F4EF;--card:#FFFFFF;--ink:#1F1E1C;--ink2:#6B6761;--line:#E4DED4;--accent:#9A7247}
+@media (prefers-color-scheme:dark){:root{--bg:#141311;--card:#1D1B18;--ink:#F2EFEA;--ink2:#A39E96;--line:#302C27;--accent:#C89E6B}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+header.top{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;color:var(--ink)}
+.brand img{width:32px;height:32px;border-radius:8px}
+nav a{margin-left:16px;color:var(--ink2);text-decoration:none;font-size:15px}
+nav a:hover{color:var(--ink)}
+h1{font-size:clamp(34px,7vw,52px);line-height:1.1;letter-spacing:-.02em;margin:48px 0 16px}
+h2{font-size:24px;margin:40px 0 8px;letter-spacing:-.01em}
+h3{font-size:18px;margin:24px 0 4px}
+.lead{font-size:20px;color:var(--ink2);margin:0 0 28px}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);padding:14px 22px;border-radius:14px;text-decoration:none;font-weight:600}
+.muted{color:var(--ink2)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:40px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.card b{display:block;margin-bottom:4px}
+.lang{display:inline-flex;gap:8px;margin:8px 0 24px;font-size:15px}
+.lang a{padding:4px 10px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--ink2)}
+hr{border:0;border-top:1px solid var(--line);margin:56px 0}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:10px 0}
+summary{cursor:pointer;font-weight:600}
+footer{padding:48px 0 64px;color:var(--ink2);font-size:14px}
+footer a{color:var(--ink2);margin-right:14px}
+ul{padding-left:22px}
